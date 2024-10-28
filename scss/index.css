@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Tiny5&display=swap");
+* {
+  text-align: center;
+  color: rgb(12, 0, 0);
+  line-height: 25px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1 {
+  text-shadow: 5px 5px 8px rgb(36, 31, 31);
+}
+body .imagem {
+  opacity: 1;
+}
+body .imagem:hover {
+  opacity: 0.5;
+}
+body .resultado_desencrip,
+body .resultado_encrip {
+  overflow: auto;
+}
+body .botao_index {
+  background: silver;
+  padding: 12px;
+  border: 4px solid black;
+  text-shadow: 2px 2px 3px rgb(7, 0, 0);
+}
+body .botao_index:hover {
+  background: white;
+}
+body .menu,
+body .pqe,
+body .txt-descript,
+body .txt-cript {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background: rgb(179, 172, 172);
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 18px;
+  }
+  .menu,
+  .pqe,
+  .txt-descript,
+  .txt-cript {
+    width: 95%;
+    padding: 8px;
+  }
+  .botao_index {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  * {
+    font-size: 20px;
+  }
+  .menu,
+  .pqe,
+  .txt-descript,
+  .txt-cript {
+    width: 85%;
+    padding: 10px;
+  }
+  .botao_index {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    font-size: 24px;
+  }
+  .menu,
+  .pqe,
+  .txt-descript,
+  .txt-cript {
+    width: 80%;
+    max-width: 700px;
+    padding: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  * {
+    font-size: 26px;
+  }
+  .menu,
+  .pqe,
+  .txt-descript,
+  .txt-cript {
+    width: 75%;
+    max-width: 800px;
+    padding: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  * {
+    font-size: 30px;
+  }
+  .menu,
+  .pqe,
+  .txt-descript,
+  .txt-cript {
+    width: 70%;
+    max-width: 900px;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=index.css.map */
