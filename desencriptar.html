@@ -21,25 +21,26 @@
             <p><b>Leia sua mensagem!</b></p><br>
             <label for="texto_desencriptar">Digite um texto abaixo:</label>
             <br><br>
-            <textarea row="50" cols="22" id="texto_desencriptar" name="texto_desencriptar" required placeholder="Ex: Eu amo Matematica Discreta"></textarea>
+            <input onkeyup="TextoDesencriptar()" onblur="VoltarTxt()" onfocus="LimpaTexto()" style="padding:40px; font-size: 22px;"id="texto_desencriptar" type="text" value="Ex: Eu amo Mat. Discreta" required>
             <br><br>
             <label for="pq_desencriptar">Digite P e Q:</label>
             <br><br>
-            <input id="pq_desencriptar" type="number" placeholder="P Q" name= "chave_desencriptar" required>
+            <input onkeyup="chavePQ()" id="pq_desencriptar" type="number" placeholder="P Q" name= "chave_desencriptar" required>
             <br><br>
             <label for="e_desencriptar">Digite E:</label>
             <br><br>
-            <input id="e_desencriptar" type="number" placeholder="E" name="e_desencriptar" required>
+            <input onkeyup="chaveE()" id="e_desencriptar" type="number" placeholder="E" name="e_desencriptar" required>
             <br><br>
             <p><i>Esse é seu texto desencriptado</i></p>
             
                 <div class="resultado_desencrip"
                     id="resultado_desencrip">
-                    <textarea id="desencrip_resultado" name="r_des" rows="10" cols="20" readonly></textarea>
+                    <textarea id="desencrip_resultado" name="r_des" rows="10" cols="22" readonly></textarea>
                 </div>
                 <br>            
         
-        <button class='botao_index' onclick="window.print()">Salvar</button>
+        <button class='botao_index' onclick="SalvarTexto()">Salvar</button>
+
         </form>
     </div>
 <br>
@@ -50,6 +51,8 @@
     <div class="rodape">
         <p><small><small>Projeto MD 2024</small></small></p>
     </div>
+
+    <script src="Javascript/index.js"></script>
 
 </body>
 

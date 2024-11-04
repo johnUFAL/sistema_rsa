@@ -22,25 +22,25 @@
             <p><b>Torne sua mensagem segura!</b></p><br>
             <label for="texto_encriptar">Digite um texte abaixo:</label>
             <br><br>
-            <textarea row="70" cols="22" id="texto_encriptar" name="texto_encriptar" required placeholder="Ex: Eu amo Matematica Discreta"></textarea>
+            <input onkeyup="TextoEncriptar()" onblur="VoltarTxt1()" onfocus="LimpaTexto1()" style="padding:40px; font-size: 22px;"id="texto_encriptar" type="text" value="Ex: Eu amo Mat. Discreta" required>
             <br><br>
             <label for="pq">Digite P e Q:</label>
             <br><br>
-            <input id="pq" type="number" placeholder="P Q" required>
+            <input onkeyup="chavePQ()" id="pq" type="number" placeholder="P Q" required>
             <br><br>
             <label for="e">Digite E:</label>
             <br><br>
-            <input id="e" type="number" placeholder="E"required>
+            <input onkeyup="chaveE()"id="e" type="number" placeholder="E"required>
             <br><br>
             <p><i>Esse é seu texto encriptado</i></p>
 
                 <div class="resultado_encrip"
-                    id="resultado_desencrip">
-                    <textarea id="desencrip_resultado" name="r_des" rows="10" cols="20" readonly></textarea>
+                    id="resultado_encrip">
+                    <textarea id="encrip_resultado" name="r_des" rows="10" cols="22" readonly></textarea>
                 </div>
                 <br> 
 
-            <button class="botao_index" onclick="window.print()">Salvar</button>
+            <button class="botao_index" onclick="SalvarTexto()">Salvar</button>
             </form>
     </div>
     <br>
@@ -52,6 +52,9 @@
      <div class="rodape">
         <p><small><small>Projeto MD 2024</small></small></p>
      </div>
+
+
+    <script src="Javascript/index.js"></script>
 
 </body>
 

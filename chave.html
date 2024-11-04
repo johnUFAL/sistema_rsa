@@ -22,27 +22,27 @@
             <br>
             <label for="p">Primeiro número:</label>
             <br><br>
-            <input id="p" type="number" placeholder="P" required>
+            <input onkeyup="chaveP()" id="p" type="number" placeholder="P" required>
             <br><br>
             <label for="q">Segundo número:</label>
             <br><br>
-            <input id="q" type="number" placeholder="Q" required>
+            <input onkeyup="chaveQ()"id="q" type="number" placeholder="Q" required>
             <br><br>
             <label for="e">Número coprimo:</label>
             <br><br>
             <abbr><i><small><small>Obs: Número que não tem nenhum fator comum oom os outros números</small></i></abbr>
             <br><br>
-            <input id="e" type="number" placeholder="E" required>
+            <input onkeyup="chaveE()"id="e" type="number" placeholder="E" required>
             <br>
             <p>Sua chave é:</p>
             
                 <div 
                     id="resultado_chave">
-                    <textarea id="chave_resultado" name="chave" rows="4" cols="22" readonly></textarea>
+                    <textarea id="chave_resultado" name="chave" rows="5" cols="22" readonly></textarea>
                 </div>
                 <br>
 
-            <button class="botao_index" onclick="window.print()">Salvar</button>
+            <button class="botao_index" onclick="SalvarTexto()">Salvar</button>
             <br><br>
         </form>
     </div>
@@ -56,6 +56,8 @@
     <div class="rodape">
         <p><small><small>Projeto MD 2024</small></small></p>
     </div>
+
+    <script src="Javascript/index.js"></script>
 
 </body>
 
