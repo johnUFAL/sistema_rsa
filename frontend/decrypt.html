@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Message</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔓 Desencriptar mensagem </h2>
+        <textarea id="decryptMessage" placeholder="Mensagem encriptada"></textarea><br>
+        <input id="firstPrimeDecrypt" placeholder="Primeiro número">
+        <input id="secondPrimeDecrypt" placeholder="Segundo número">
+        <input id="decryptExponent" placeholder="Expoente">
+        <button onclick="decryptMessage()">Desencriptar</button>
+        <pre id="decryptOutput"></pre>
+        <br>
+        <!-- Notification -->
+        <div id="notification" class="notification">Arquivo salvado com sucesso!</div>
+        <a href="index.html">⬅️ Voltar para o início </a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

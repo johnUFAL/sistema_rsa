@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt Message</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔐 Encriptar mensagem</h2>
+        <textarea id="encryptMessage" placeholder="Digite uma mensage Ex: Eu amo Mat. Discreta"></textarea><br>
+        <input id="publicKeyEncrypt" placeholder="Chave pública">
+        <input id="exponentEncrypt" placeholder="Expoente">
+        <button onclick="encryptMessage()">Encriptar</button>
+        <pre id="encryptOutput"></pre>
+        <br>
+        <!-- Notification -->
+        <div id="notification" class="notification">Arquivo salvado com sucesso!</div>
+        <a href="index.html">⬅️ Voltar para o início</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

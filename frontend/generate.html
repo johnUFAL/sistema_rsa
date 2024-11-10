@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Key</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔑 Gerar chave pública </h2>
+        <input id="firstPrime" placeholder="Primeiro número">
+        <input id="secondPrime" placeholder="Segundo número">
+        <input id="exponent" placeholder="Expoente">
+        <button onclick="generateKey()">Gerar Chave</button>
+        <pre id="keyOutput"></pre>
+        <br>
+        <!-- Notification -->
+        <a href="index.html">⬅️ Voltar para o início</a>
+    </div>
+    <div id="notification" class="notification">Arquivo salvado com sucesso!</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
