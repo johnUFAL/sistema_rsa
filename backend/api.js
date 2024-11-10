@@ -10,6 +10,9 @@ const file = path.join(__dirname, 'RSA');
 
 app.use(express.static(path.join(__dirname, '../frontend')));
 
+// server
+const PORT = process.env.PORT || 5500;
+
 // gerar chave
 app.post("/generate_key", (req, res) => {
     const { firstPrime, secondPrime, exponent } = req.body;
@@ -50,10 +53,4 @@ app.post("/decrypt", (req, res) => {
         }
         res.send(stdout);
     });
-});
-
-// server
-const PORT = 3001;
-app.listen(PORT, () => {
-    console.log(`Servidor online em http://localhost:${PORT}`);
 });
