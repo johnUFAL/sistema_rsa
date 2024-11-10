@@ -1,3 +1,5 @@
+
+
 //Apenas estilo
 function LimpaTexto1(){
     document.getElementById("texto_encriptar").value = ""; 
@@ -116,4 +118,5 @@ function menu(opcao) {
         console.log(3);
         break;
     }
-}
+}server.listen(5500);
+
