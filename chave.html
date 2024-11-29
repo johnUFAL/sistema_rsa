@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriotion" content="Criação de uma chave pública utilizndo dois numeros primos e um coprim ">
+    <link rel="stylesheet" href="scss/index.css">
+    <title>Gerar chave</title>
+</head>
+
+<body>
+    <div class="topo" style="letter-spacing: 5px;">
+        <h1 style="font-size: 50px;">RSA</h1>
+        <img class="imagem" src="img/chaves.png" width="150">
+    </div>
+
+    <div class="pqe">
+        <form>
+            <p><b>Gere sua chave</b></p>
+            <br>
+            <label for="p">Primeiro número:</label>
+            <br><br>
+            <input onkeyup="chaveP()" id="p" type="number" placeholder="P" required>
+            <br><br>
+            <label for="q">Segundo número:</label>
+            <br><br>
+            <input onkeyup="chaveQ()"id="q" type="number" placeholder="Q" required>
+            <br><br>
+            <label for="e">Número coprimo:</label>
+            <br><br>
+            <abbr><i><small><small>Obs: Número que não tem nenhum fator comum oom os outros números</small></i></abbr>
+            <br><br>
+            <input onkeyup="chaveE()"id="e" type="number" placeholder="E" required>
+            <br>
+            <p>Sua chave é:</p>
+            
+                <div 
+                    id="resultado_chave">
+                    <textarea id="chave_resultado" name="chave" rows="5" cols="22" readonly></textarea>
+                </div>
+                <br>
+
+            <button class="botao_index" onclick="SalvarTexto()">Salvar</button>
+            <br><br>
+        </form>
+    </div>
+
+    <br>
+    <di class="inical">
+        <a href="index.html"><button class="botao_index">Voltar</button></a>
+    </di>
+    <br>
+
+    <div class="rodape">
+        <p><small><small>Projeto MD 2024</small></small></p>
+    </div>
+
+    <script src="Javascript/index.js"></script>
+
+</body>
+
+</html>

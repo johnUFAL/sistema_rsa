@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriotion" content="Usando o sistema RSA o texto sera encriptado">
+    <link rel="stylesheet" href="scss/index.css">
+
+    <title>Encriptar</title>
+</head>
+
+<body>
+    <div class="topo" style="letter-spacing: 5px;">
+        <h1 style="font-size: 50px;">RSA</h1>
+        <img class="imagem" src="img/simbolo-de-interface-de-cadeado-fechado-retangular.png" width="150">
+    </div>
+    
+    <div class="txt-cript">
+        <form>
+            <p><b>Torne sua mensagem segura!</b></p><br>
+            <label for="texto_encriptar">Digite um texte abaixo:</label>
+            <br><br>
+            <input onkeyup="TextoEncriptar()" onblur="VoltarTxt1()" onfocus="LimpaTexto1()" style="padding:40px; font-size: 22px;"id="texto_encriptar" type="text" value="Ex: Eu amo Mat. Discreta" required>
+            <br><br>
+            <label for="pq">Digite P e Q:</label>
+            <br><br>
+            <input onkeyup="chavePQ()" id="pq" type="number" placeholder="P Q" required>
+            <br><br>
+            <label for="e">Digite E:</label>
+            <br><br>
+            <input onkeyup="chaveE()"id="e" type="number" placeholder="E"required>
+            <br><br>
+            <p><i>Esse é seu texto encriptado</i></p>
+
+                <div class="resultado_encrip"
+                    id="resultado_encrip">
+                    <textarea id="encrip_resultado" name="r_des" rows="10" cols="22" readonly></textarea>
+                </div>
+                <br> 
+
+            <button class="botao_index" onclick="SalvarTexto()">Salvar</button>
+            </form>
+    </div>
+    <br>
+
+    <div class="inicial">
+        <a href="index.html"><button class="botao_index">Voltar</button></a>
+    </div>
+
+     <div class="rodape">
+        <p><small><small>Projeto MD 2024</small></small></p>
+     </div>
+
+
+    <script src="Javascript/index.js"></script>
+
+</body>
+
+</html>

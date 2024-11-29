@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriotion" content="Usando o sistema RSA o texto sera desencriptado">
+    <link rel="stylesheet" href="scss/index.css">
+    <title>Encriptar </title>
+</head>
+
+<body>
+    <div class="topo" style="letter-spacing: 5px;">
+        <h1 style="font-size: 50px;">RSA</h1>
+        <img class="imagem" src="img/cadeado-desbloqueado.png" width="150">
+    </div>
+
+    <div class="txt-descript"> 
+        <form>
+            <p><b>Leia sua mensagem!</b></p><br>
+            <label for="texto_desencriptar">Digite um texto abaixo:</label>
+            <br><br>
+            <input onkeyup="TextoDesencriptar()" onblur="VoltarTxt()" onfocus="LimpaTexto()" style="padding:40px; font-size: 22px;"id="texto_desencriptar" type="text" value="Ex: Eu amo Mat. Discreta" required>
+            <br><br>
+            <label for="pq_desencriptar">Digite P e Q:</label>
+            <br><br>
+            <input onkeyup="chavePQ()" id="pq_desencriptar" type="number" placeholder="P Q" name= "chave_desencriptar" required>
+            <br><br>
+            <label for="e_desencriptar">Digite E:</label>
+            <br><br>
+            <input onkeyup="chaveE()" id="e_desencriptar" type="number" placeholder="E" name="e_desencriptar" required>
+            <br><br>
+            <p><i>Esse é seu texto desencriptado</i></p>
+            
+                <div class="resultado_desencrip"
+                    id="resultado_desencrip">
+                    <textarea id="desencrip_resultado" name="r_des" rows="10" cols="22" readonly></textarea>
+                </div>
+                <br>            
+        
+        <button class='botao_index' onclick="SalvarTexto()">Salvar</button>
+
+        </form>
+    </div>
+<br>
+    <di class="inical">
+        <a href="index.html"><button class="botao_index">Voltar</button></a>
+    </di>
+    
+    <div class="rodape">
+        <p><small><small>Projeto MD 2024</small></small></p>
+    </div>
+
+    <script src="Javascript/index.js"></script>
+
+</body>
+
+</html>
