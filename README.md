@@ -1,15 +1,20 @@
-# _**Projeto piloto Front-end para um Sistema de criptografia RSA**_
-***
+Projeto Piloto: Front-end para um Sistema de Criptografia RSA
 
+Sobre o projeto
 
-## Esse projeto teve como objeto central a criptografia, descriptografia e geração de chave pública nos moldes do algoritmo RSA 
+Este projeto tem como objetivo central a criptografia, descriptografia e geração de chaves públicas utilizando o algoritmo RSA.
 
-A maneira mais eficiente para trabalhar a linguagem C, obrigatória para a construção do Back-end, foi utilizando web.
+Foi desenvolvido no contexto da disciplina de Matemática Discreta, aplicando conceitos estudados em aula para a implementação do Back-end em linguagem C.
 
-Foi minha primeira experiência em Front-end, obviamente há implementações bem rudimentares 
+Para integrar a obrigatoriedade do uso de C no Back-end com uma interface mais acessível, optei por explorar tecnologias web no desenvolvimento do Front-end.
 
-Gostei muito de aprender sobre essas nova tecnologias: Javascript, CSS, HTMl e Nodejs.
+Minha experiência
 
-Acredito que vou me dedicar e me aprofundar para trazer um sistema-rsa 2.0 
+Esta foi minha primeira experiência com Front-end, e, embora as implementações ainda sejam rudimentares, fiquei muito animado em aprender novas tecnologias como JavaScript, CSS, HTML e Node.js.
 
+Gostei tanto dessa experiência que já planejo me aprofundar mais para criar uma versão 2.0 do sistema RSA, com melhorias significativas.
+
+Acesso ao projeto
+
+O código completo pode ser encontrado no repositório do GitHub:
 [Projeto finalizado](https://github.com/jwaozera/Projeto-MD-2024/tree/main)
